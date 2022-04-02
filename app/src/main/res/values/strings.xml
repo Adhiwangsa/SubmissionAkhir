@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SubmissionAkhir</string>
+
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+
+    <string name="pengikut">Pengikut</string>
+    <string name="mengikuti">Mengikuti</string>
+    <string name="repositori">Repository</string>
+
+
+</resources>

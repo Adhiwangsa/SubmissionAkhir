@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/lightpurple"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="12dp"
+            app:civ_border_color="#FF909090"
+            tools:ignore="MissingConstraints"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/tv_item_username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintBottom_toTopOf="@id/tv_item_url"
+            app:layout_constraintStart_toEndOf="@+id/circleImg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="username" />
+
+        <TextView
+            android:id="@+id/tv_item_url"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/tv_item_username"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_username"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_username"
+            tools:text="Our Website" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
